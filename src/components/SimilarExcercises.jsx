@@ -1,8 +1,34 @@
+import { Box, Stack, Typography } from '@mui/material';
 
-const SimilarExcercises = () => {
+import HorizontalScrollbar from './HorizontalScrollbar';
+import Loader from './Loader';
+
+const SimilarExcercises = ({ targetMuscleExercises, equipmentExercises }) => {
   return (
-    <div>SimilarExcercises</div>
-  )
-}
+    <Box sx={{ mt: { lg: '100px', xs: '0' } }}>
+      <Typography variant='h3' mb={5}>
+        Exercises that target the same muscle group
+      </Typography>
+      <Stack direction='row' sx={{ p: '2', position: 'relative' }} mb={10}>
+        {targetMuscleExercises.length ? (
+          <HorizontalScrollbar data={targetMuscleExercises} />
+        ) : (
+          <Loader />
+        )}
+      </Stack>
 
-export default SimilarExcercises
+      <Typography variant='h3' mb={5} mt={3}>
+        Exercises that target the same equipment
+      </Typography>
+      <Stack direction='row' sx={{ p: '2', position: 'relative' }}>
+        {equipmentExercises.length ? (
+          <HorizontalScrollbar data={equipmentExercises} />
+        ) : (
+          <Loader />
+        )}
+      </Stack>
+    </Box>
+  );
+};
+
+export default SimilarExcercises;
