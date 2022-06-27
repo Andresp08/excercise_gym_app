@@ -6,11 +6,11 @@
 
 * This project contains: 
 
-⋅⋅⋅Multiple Api Calls to Rapid-Api Hub
-⋅⋅⋅Responsive interface desing using MUI
-⋅⋅⋅Dinamic routes using React-Router-Dom V6
-⋅⋅⋅Best practices and folder structure
-⋅⋅⋅Awesome interface components
+-Multiple Api Calls to Rapid-Api Hub
+⋅Responsive interface desing using MUI
+⋅Dinamic routes using React-Router-Dom V6
+⋅Best practices and folder structure
+⋅Awesome interface components
 
 And many more.
 I hope you like it.
